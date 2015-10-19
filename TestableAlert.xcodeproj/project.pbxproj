@@ -7,18 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2BAC4BEA1BD4BF7E004B6CD0 /* TestableAlertViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BAC4BE91BD4BF7E004B6CD0 /* TestableAlertViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2BAC4BF81BD4C138004B6CD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAC4BF71BD4C138004B6CD0 /* AppDelegate.swift */; };
 		2BAC4BFA1BD4C138004B6CD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAC4BF91BD4C138004B6CD0 /* ViewController.swift */; };
 		2BAC4BFD1BD4C138004B6CD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BAC4BFB1BD4C138004B6CD0 /* Main.storyboard */; };
 		2BAC4BFF1BD4C138004B6CD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BAC4BFE1BD4C138004B6CD0 /* Assets.xcassets */; };
 		2BAC4C021BD4C138004B6CD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BAC4C001BD4C138004B6CD0 /* LaunchScreen.storyboard */; };
+		2BAC4C0A1BD4C25B004B6CD0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BAC4C081BD4C25B004B6CD0 /* Info.plist */; settings = {ASSET_TAGS = (); }; };
+		2BAC4C0B1BD4C25B004B6CD0 /* TestableAlertViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BAC4C091BD4C25B004B6CD0 /* TestableAlertViewController.h */; settings = {ASSET_TAGS = (); }; };
+		2BAC4C0C1BD4C293004B6CD0 /* TestableAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BAC4BE61BD4BF7E004B6CD0 /* TestableAlert.framework */; };
+		2BAC4C0D1BD4C293004B6CD0 /* TestableAlert.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BAC4BE61BD4BF7E004B6CD0 /* TestableAlert.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BAC4C0E1BD4C293004B6CD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BAC4BDD1BD4BF7E004B6CD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BAC4BE51BD4BF7E004B6CD0;
+			remoteInfo = TestableAlert;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2BAC4C101BD4C293004B6CD0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2BAC4C0D1BD4C293004B6CD0 /* TestableAlert.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2BAC4BE61BD4BF7E004B6CD0 /* TestableAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestableAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BAC4BE91BD4BF7E004B6CD0 /* TestableAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestableAlertViewController.h; sourceTree = "<group>"; };
-		2BAC4BEB1BD4BF7E004B6CD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BAC4BF51BD4C138004B6CD0 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BAC4BF71BD4C138004B6CD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BAC4BF91BD4C138004B6CD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +51,8 @@
 		2BAC4BFE1BD4C138004B6CD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BAC4C011BD4C138004B6CD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BAC4C031BD4C138004B6CD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BAC4C081BD4C25B004B6CD0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BAC4C091BD4C25B004B6CD0 /* TestableAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestableAlertViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BAC4C0C1BD4C293004B6CD0 /* TestableAlert.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,7 +77,7 @@
 		2BAC4BDC1BD4BF7E004B6CD0 = {
 			isa = PBXGroup;
 			children = (
-				2BAC4BE81BD4BF7E004B6CD0 /* TestableAlertViewController */,
+				2BAC4C071BD4C25B004B6CD0 /* TestableAlert */,
 				2BAC4BF61BD4C138004B6CD0 /* Demo */,
 				2BAC4BE71BD4BF7E004B6CD0 /* Products */,
 			);
@@ -62,15 +90,6 @@
 				2BAC4BF51BD4C138004B6CD0 /* Demo.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		2BAC4BE81BD4BF7E004B6CD0 /* TestableAlertViewController */ = {
-			isa = PBXGroup;
-			children = (
-				2BAC4BE91BD4BF7E004B6CD0 /* TestableAlertViewController.h */,
-				2BAC4BEB1BD4BF7E004B6CD0 /* Info.plist */,
-			);
-			path = TestableAlertViewController;
 			sourceTree = "<group>";
 		};
 		2BAC4BF61BD4C138004B6CD0 /* Demo */ = {
@@ -86,6 +105,15 @@
 			path = Demo;
 			sourceTree = "<group>";
 		};
+		2BAC4C071BD4C25B004B6CD0 /* TestableAlert */ = {
+			isa = PBXGroup;
+			children = (
+				2BAC4C081BD4C25B004B6CD0 /* Info.plist */,
+				2BAC4C091BD4C25B004B6CD0 /* TestableAlertViewController.h */,
+			);
+			path = TestableAlert;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,7 +121,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BAC4BEA1BD4BF7E004B6CD0 /* TestableAlertViewController.h in Headers */,
+				2BAC4C0B1BD4C25B004B6CD0 /* TestableAlertViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,10 +153,12 @@
 				2BAC4BF11BD4C138004B6CD0 /* Sources */,
 				2BAC4BF21BD4C138004B6CD0 /* Frameworks */,
 				2BAC4BF31BD4C138004B6CD0 /* Resources */,
+				2BAC4C101BD4C293004B6CD0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2BAC4C0F1BD4C293004B6CD0 /* PBXTargetDependency */,
 			);
 			name = Demo;
 			productName = Demo;
@@ -176,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BAC4C0A1BD4C25B004B6CD0 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +240,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BAC4C0F1BD4C293004B6CD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BAC4BE51BD4BF7E004B6CD0 /* TestableAlert */;
+			targetProxy = 2BAC4C0E1BD4C293004B6CD0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2BAC4BFB1BD4C138004B6CD0 /* Main.storyboard */ = {
@@ -326,7 +365,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TestableAlertViewController/Info.plist;
+				INFOPLIST_FILE = TestableAlert/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.marketplacer.TestableAlert;
@@ -342,7 +381,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TestableAlertViewController/Info.plist;
+				INFOPLIST_FILE = TestableAlert/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.marketplacer.TestableAlert;
