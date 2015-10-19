@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2BAC4BE61BD4BF7E004B6CD0 /* TestableAlertViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestableAlertViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BAC4BE61BD4BF7E004B6CD0 /* TestableAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestableAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BAC4BE91BD4BF7E004B6CD0 /* TestableAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestableAlertViewController.h; sourceTree = "<group>"; };
 		2BAC4BEB1BD4BF7E004B6CD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BAC4BF51BD4C138004B6CD0 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,7 +58,7 @@
 		2BAC4BE71BD4BF7E004B6CD0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2BAC4BE61BD4BF7E004B6CD0 /* TestableAlertViewController.framework */,
+				2BAC4BE61BD4BF7E004B6CD0 /* TestableAlert.framework */,
 				2BAC4BF51BD4C138004B6CD0 /* Demo.app */,
 			);
 			name = Products;
@@ -100,9 +100,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2BAC4BE51BD4BF7E004B6CD0 /* TestableAlertViewController */ = {
+		2BAC4BE51BD4BF7E004B6CD0 /* TestableAlert */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2BAC4BEE1BD4BF7E004B6CD0 /* Build configuration list for PBXNativeTarget "TestableAlertViewController" */;
+			buildConfigurationList = 2BAC4BEE1BD4BF7E004B6CD0 /* Build configuration list for PBXNativeTarget "TestableAlert" */;
 			buildPhases = (
 				2BAC4BE11BD4BF7E004B6CD0 /* Sources */,
 				2BAC4BE21BD4BF7E004B6CD0 /* Frameworks */,
@@ -113,9 +113,9 @@
 			);
 			dependencies = (
 			);
-			name = TestableAlertViewController;
+			name = TestableAlert;
 			productName = TestableAlertViewController;
-			productReference = 2BAC4BE61BD4BF7E004B6CD0 /* TestableAlertViewController.framework */;
+			productReference = 2BAC4BE61BD4BF7E004B6CD0 /* TestableAlert.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		2BAC4BF41BD4C138004B6CD0 /* Demo */ = {
@@ -152,7 +152,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2BAC4BE01BD4BF7E004B6CD0 /* Build configuration list for PBXProject "TestableAlertViewController" */;
+			buildConfigurationList = 2BAC4BE01BD4BF7E004B6CD0 /* Build configuration list for PBXProject "TestableAlert" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -165,7 +165,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2BAC4BE51BD4BF7E004B6CD0 /* TestableAlertViewController */,
+				2BAC4BE51BD4BF7E004B6CD0 /* TestableAlert */,
 				2BAC4BF41BD4C138004B6CD0 /* Demo */,
 			);
 		};
@@ -329,8 +329,8 @@
 				INFOPLIST_FILE = TestableAlertViewController/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = au.com.marketplacer.TestableAlertViewController;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.marketplacer.TestableAlert;
+				PRODUCT_NAME = TestableAlert;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -345,8 +345,8 @@
 				INFOPLIST_FILE = TestableAlertViewController/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = au.com.marketplacer.TestableAlertViewController;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.marketplacer.TestableAlert;
+				PRODUCT_NAME = TestableAlert;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -358,7 +358,7 @@
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = au.com.marketplacer.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.marketplacer.TestableAlertViewControllerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -370,7 +370,7 @@
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = au.com.marketplacer.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.marketplacer.TestableAlertViewControllerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -378,7 +378,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2BAC4BE01BD4BF7E004B6CD0 /* Build configuration list for PBXProject "TestableAlertViewController" */ = {
+		2BAC4BE01BD4BF7E004B6CD0 /* Build configuration list for PBXProject "TestableAlert" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BAC4BEC1BD4BF7E004B6CD0 /* Debug */,
@@ -387,7 +387,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2BAC4BEE1BD4BF7E004B6CD0 /* Build configuration list for PBXNativeTarget "TestableAlertViewController" */ = {
+		2BAC4BEE1BD4BF7E004B6CD0 /* Build configuration list for PBXNativeTarget "TestableAlert" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BAC4BEF1BD4BF7E004B6CD0 /* Debug */,
