@@ -12,15 +12,24 @@
 		2BAC4BFD1BD4C138004B6CD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BAC4BFB1BD4C138004B6CD0 /* Main.storyboard */; };
 		2BAC4BFF1BD4C138004B6CD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BAC4BFE1BD4C138004B6CD0 /* Assets.xcassets */; };
 		2BAC4C021BD4C138004B6CD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BAC4C001BD4C138004B6CD0 /* LaunchScreen.storyboard */; };
-		2BAC4C0A1BD4C25B004B6CD0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BAC4C081BD4C25B004B6CD0 /* Info.plist */; settings = {ASSET_TAGS = (); }; };
 		2BAC4C0B1BD4C25B004B6CD0 /* TestableAlertViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BAC4C091BD4C25B004B6CD0 /* TestableAlertViewController.h */; settings = {ASSET_TAGS = (); }; };
 		2BAC4C0C1BD4C293004B6CD0 /* TestableAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BAC4BE61BD4BF7E004B6CD0 /* TestableAlert.framework */; };
 		2BAC4C0D1BD4C293004B6CD0 /* TestableAlert.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BAC4BE61BD4BF7E004B6CD0 /* TestableAlert.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2BAC4C121BD4C2C9004B6CD0 /* TestableAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAC4C111BD4C2C9004B6CD0 /* TestableAlert.swift */; settings = {ASSET_TAGS = (); }; };
+		7EA407411BD5AECE00C426EF /* TestableAlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA407401BD5AECE00C426EF /* TestableAlertTests.swift */; };
+		7EA407431BD5AECE00C426EF /* TestableAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BAC4BE61BD4BF7E004B6CD0 /* TestableAlert.framework */; settings = {ASSET_TAGS = (); }; };
+		7EA4074A1BD5B4C200C426EF /* TestableAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA407491BD5B4C200C426EF /* TestableAlertAction.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		2BAC4C0E1BD4C293004B6CD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BAC4BDD1BD4BF7E004B6CD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BAC4BE51BD4BF7E004B6CD0;
+			remoteInfo = TestableAlert;
+		};
+		7EA407441BD5AECE00C426EF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2BAC4BDD1BD4BF7E004B6CD0 /* Project object */;
 			proxyType = 1;
@@ -55,6 +64,10 @@
 		2BAC4C081BD4C25B004B6CD0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BAC4C091BD4C25B004B6CD0 /* TestableAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestableAlertViewController.h; sourceTree = "<group>"; };
 		2BAC4C111BD4C2C9004B6CD0 /* TestableAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestableAlert.swift; sourceTree = "<group>"; };
+		7EA4073E1BD5AECE00C426EF /* TestableAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestableAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EA407401BD5AECE00C426EF /* TestableAlertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestableAlertTests.swift; sourceTree = "<group>"; };
+		7EA407421BD5AECE00C426EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EA407491BD5B4C200C426EF /* TestableAlertAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestableAlertAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +86,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7EA4073B1BD5AECE00C426EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EA407431BD5AECE00C426EF /* TestableAlert.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				2BAC4C071BD4C25B004B6CD0 /* TestableAlert */,
+				7EA4073F1BD5AECE00C426EF /* TestableAlertTests */,
 				2BAC4BF61BD4C138004B6CD0 /* Demo */,
 				2BAC4BE71BD4BF7E004B6CD0 /* Products */,
 			);
@@ -90,6 +112,7 @@
 			children = (
 				2BAC4BE61BD4BF7E004B6CD0 /* TestableAlert.framework */,
 				2BAC4BF51BD4C138004B6CD0 /* Demo.app */,
+				7EA4073E1BD5AECE00C426EF /* TestableAlertTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,10 +134,20 @@
 			isa = PBXGroup;
 			children = (
 				2BAC4C111BD4C2C9004B6CD0 /* TestableAlert.swift */,
+				7EA407491BD5B4C200C426EF /* TestableAlertAction.swift */,
 				2BAC4C081BD4C25B004B6CD0 /* Info.plist */,
 				2BAC4C091BD4C25B004B6CD0 /* TestableAlertViewController.h */,
 			);
 			path = TestableAlert;
+			sourceTree = "<group>";
+		};
+		7EA4073F1BD5AECE00C426EF /* TestableAlertTests */ = {
+			isa = PBXGroup;
+			children = (
+				7EA407401BD5AECE00C426EF /* TestableAlertTests.swift */,
+				7EA407421BD5AECE00C426EF /* Info.plist */,
+			);
+			path = TestableAlertTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +201,24 @@
 			productReference = 2BAC4BF51BD4C138004B6CD0 /* Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7EA4073D1BD5AECE00C426EF /* TestableAlertTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EA407481BD5AECE00C426EF /* Build configuration list for PBXNativeTarget "TestableAlertTests" */;
+			buildPhases = (
+				7EA4073A1BD5AECE00C426EF /* Sources */,
+				7EA4073B1BD5AECE00C426EF /* Frameworks */,
+				7EA4073C1BD5AECE00C426EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EA407451BD5AECE00C426EF /* PBXTargetDependency */,
+			);
+			name = TestableAlertTests;
+			productName = TestableAlertTests;
+			productReference = 7EA4073E1BD5AECE00C426EF /* TestableAlertTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -182,6 +233,9 @@
 						CreatedOnToolsVersion = 7.0.1;
 					};
 					2BAC4BF41BD4C138004B6CD0 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					7EA4073D1BD5AECE00C426EF = {
 						CreatedOnToolsVersion = 7.0.1;
 					};
 				};
@@ -200,6 +254,7 @@
 			projectRoot = "";
 			targets = (
 				2BAC4BE51BD4BF7E004B6CD0 /* TestableAlert */,
+				7EA4073D1BD5AECE00C426EF /* TestableAlertTests */,
 				2BAC4BF41BD4C138004B6CD0 /* Demo */,
 			);
 		};
@@ -210,7 +265,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BAC4C0A1BD4C25B004B6CD0 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +278,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7EA4073C1BD5AECE00C426EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -231,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EA4074A1BD5B4C200C426EF /* TestableAlertAction.swift in Sources */,
 				2BAC4C121BD4C2C9004B6CD0 /* TestableAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +306,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7EA4073A1BD5AECE00C426EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EA407411BD5AECE00C426EF /* TestableAlertTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -251,6 +321,11 @@
 			isa = PBXTargetDependency;
 			target = 2BAC4BE51BD4BF7E004B6CD0 /* TestableAlert */;
 			targetProxy = 2BAC4C0E1BD4C293004B6CD0 /* PBXContainerItemProxy */;
+		};
+		7EA407451BD5AECE00C426EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BAC4BE51BD4BF7E004B6CD0 /* TestableAlert */;
+			targetProxy = 7EA407441BD5AECE00C426EF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -424,6 +499,28 @@
 			};
 			name = Release;
 		};
+		7EA407461BD5AECE00C426EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TestableAlertTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evgenii.TestableAlertTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7EA407471BD5AECE00C426EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TestableAlertTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evgenii.TestableAlertTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -443,12 +540,22 @@
 				2BAC4BF01BD4BF7E004B6CD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BAC4C041BD4C138004B6CD0 /* Build configuration list for PBXNativeTarget "Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BAC4C051BD4C138004B6CD0 /* Debug */,
 				2BAC4C061BD4C138004B6CD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EA407481BD5AECE00C426EF /* Build configuration list for PBXNativeTarget "TestableAlertTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EA407461BD5AECE00C426EF /* Debug */,
+				7EA407471BD5AECE00C426EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

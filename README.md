@@ -1,8 +1,8 @@
 🚧🚧🚧 This is work in progress 🚧🚧🚧
 
-# A testable wrapper around UIAlertViewController written in Swift
+# A testable wrapper around UIAlertController written in Swift
 
-UIAlertViewController is used in iOS to present modal alerts and action sheets. This library makes it easier to test your code that uses UIAlertViewController.
+UIAlertController is used in iOS to present modal alerts and action sheets. This library makes it easier to test your code that uses UIAlertController.
 
 Here is what it can do in your unit test:
 
