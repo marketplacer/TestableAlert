@@ -1,6 +1,6 @@
 🚧🚧🚧 This is work in progress 🚧🚧🚧
 
-# A wrapper around UIAlertController for easier unit testing.
+# UIAlertController wrapper for easier unit testing
 
 UIAlertController is used in iOS to present modal alerts and action sheets. This library makes it easier to test your code that uses UIAlertController.
 
