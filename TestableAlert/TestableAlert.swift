@@ -2,7 +2,7 @@ import UIKit
 
 /**
 
-A wrapper around UIAlertAction for easier unit testing.
+A wrapper around UIAlertController for easier unit testing.
 
 */
 public class TestableAlert {
