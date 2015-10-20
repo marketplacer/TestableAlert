@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = "TestableAlert"
-  s.version     = "1.0.3"
+  s.version     = "1.0.4"
   s.license     = { :type => "MIT" }
   s.homepage    = "https://github.com/exchangegroup/TestableAlert"
   s.summary     = "A UIAlertController wrapper for easier unit testing written in Swift"
