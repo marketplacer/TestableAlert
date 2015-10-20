@@ -54,7 +54,9 @@ testableAlert = TestableAlert(alert: alertController)
 4) Add actions to the testable alert instance instead of the alert controller.
 
 ```Swift
-testableAlert?.addAction("OK", style: .Destructive, handler: nil)
+testableAlert?.addAction("OK", style: .Destructive) { _ in
+  // Do something
+}
 ```
 
 5) Present the alert in the view controller.
@@ -78,7 +80,11 @@ class ViewController: UIViewController {
       title: "Do you want to cancel this operation?", message: nil, preferredStyle: .ActionSheet)
 
     testableAlert = TestableAlert(alert: alertController)
-    testableAlert?.addAction("OK", style: .Destructive, handler: nil)
+
+    testableAlert?.addAction("OK", style: .Destructive, handler: nil) { _ in
+      // Do something
+    }
+
     testableAlert?.addAction("Cancel", style: .Cancel, handler: nil)
 
     testableAlert?.present(self)
