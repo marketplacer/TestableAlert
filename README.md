@@ -4,10 +4,7 @@
 
 UIAlertController is used in iOS to present modal alerts and action sheets. This library makes it easier to test your code that uses UIAlertController.
 
-Here is what it can do in your unit test:
-
-* Check if alert view is currently visible.
-* Execute an action given its title.
+This library will allow you to do check if alert view is visible in unit tests and execute its actions. Executing an alert action will call its handler.
 
 ## Setup
 
