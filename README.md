@@ -91,7 +91,7 @@ class ViewController: UIViewController {
 ```
 
 
-## Testing alert
+## Testing the alert
 
 Here is how you can verify the alert and execute its actions from your view controller unit test.
 
