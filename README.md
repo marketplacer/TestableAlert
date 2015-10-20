@@ -49,7 +49,7 @@ let alertController = UIAlertController(
 testableAlert = TestableAlert(alert: alertController)
 ```
 
-4) Add actions to the testable alert instance instead of the alert controller.
+4) Add actions to the testable alert instance.
 
 ```Swift
 testableAlert?.addAction("OK", style: .Destructive) { _ in
