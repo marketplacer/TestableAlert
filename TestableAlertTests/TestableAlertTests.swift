@@ -27,10 +27,15 @@ class TestableAlertTests: XCTestCase {
   
   func testAddAction() {
     let myActionHandler = { (action: UIAlertAction) -> Void in }
-    obj.addAction("Test action", style: .Destructive, handler: myActionHandler)
+    let result = obj.addAction("Test action", style: .Destructive, handler: myActionHandler)
+    
+    XCTAssertEqual("Test action", result.title)
+    
+    XCTAssertEqual(1, obj.testableActions.count)
+    XCTAssertEqual("Test action", obj.testableActions.first?.action.title)
     
     XCTAssertEqual(1, obj.actions.count)
-    XCTAssertEqual("Test action", obj.actions.first?.action.title)
+    XCTAssertEqual("Test action", obj.actions.first?.title)
   }
   
   func testAddAction_savesHandler() {
@@ -40,7 +45,7 @@ class TestableAlertTests: XCTestCase {
     }
     
     obj.addAction("Test action", style: .Destructive, handler: myActionHandler)
-    let testableAction = obj.actions.first!
+    let testableAction = obj.testableActions.first!
     testableAction.handler?(testableAction.action)
     
     XCTAssert(didCallClosure)

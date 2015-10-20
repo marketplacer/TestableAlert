@@ -10,7 +10,7 @@ public class TestableAlert {
   let alert: UIAlertController
   
   /// Array of alert actions with handlers
-  var actions = [TestableAlertAction]()
+  var testableActions = [TestableAlertAction]()
   
   private var visiblePrivate = false
   
@@ -18,6 +18,13 @@ public class TestableAlert {
   public var visible: Bool {
     get {
       return visiblePrivate
+    }
+  }
+  
+  /// Returns an array of actions added to the alert
+  public var actions: [UIAlertAction] {
+    get {
+      return testableActions.map { $0.action }
     }
   }
   
@@ -46,20 +53,25 @@ public class TestableAlert {
   
   /**
   
-  Add an action to the alert.
+  Adds an action to the alert.
   
   - parameter title: Action title. It is displayed as a title on the button.
   
   - parameter style: Style of the action.
 
   - parameter handler: An optional closure that will be called for the action.
+  
+  - returns: A new action object that was added to the alert.
 
   */
-  public func addAction(title: String?, style: UIAlertActionStyle, handler: ((UIAlertAction) -> Void)?) {
+  public func addAction(title: String?, style: UIAlertActionStyle,
+    handler: ((UIAlertAction) -> Void)?) -> UIAlertAction {
+      
     let newAction = UIAlertAction(title: title, style: style, handler: handler)
     let testableAlertAction = TestableAlertAction(action: newAction, handler: handler)
-    actions.append(testableAlertAction)
+    testableActions.append(testableAlertAction)
     alert.addAction(newAction)
+    return newAction
   }
   
   /**
@@ -81,13 +93,14 @@ public class TestableAlert {
   Returns an action that has a given title.
 
   - parameter title: Action title. It is displayed as a title on the button.
+  
   - returns: Action that has a given title. Returns nil if there are no action with the title.
 
   */
   private func actionWithTitle(title: String) -> TestableAlertAction? {
-    for action in actions {
-      if action.action.title == title {
-        return action
+    for testableAction in testableActions {
+      if testableAction.action.title == title {
+        return testableAction
       }
     }
     
