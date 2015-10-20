@@ -43,7 +43,7 @@ let alertController = UIAlertController(
   preferredStyle: .ActionSheet)
 ```
 
-3) Create an instance of `TestableAlert` supplying the alert instance you just created.
+3) Create an instance of `TestableAlert` supplying the alert you just created.
 
 ```Swift
 testableAlert = TestableAlert(alert: alertController)
