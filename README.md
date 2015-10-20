@@ -97,13 +97,13 @@ class ViewController: UIViewController {
 
 Here is how you can verify the alert and execute its actions from your view controller unit test.
 
-#### Check if alert is visible.
+#### Check alert visibility
 
 ```Swift
 XCTAssert(viewController.testableAlert.visible)
 ```
 
-#### Execute an action by its title.
+#### Execute an action by its title
 
 This will call the action handler and dismiss the alert. The method `simulateAction` is the main reason this library exists.
 
