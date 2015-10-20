@@ -15,7 +15,7 @@ There are three ways you can add TestableAlert to your project.
 
 **Add source (iOS 7+)**
 
-Simply add [TestableAlert.swift]() file into your Xcode project.
+Simply add [TestableAlert.swift](https://github.com/exchangegroup/TestableAlert/blob/master/TestableAlert/TestableAlert.swift) file into your Xcode project.
 
 **Setup with Carthage (iOS 8+)**
 
