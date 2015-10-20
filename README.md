@@ -121,7 +121,7 @@ testableAlert.simulateAction("OK")
 
 #### Get list of alert actions
 
-Use the `actions` property to get the array of all UIAlertAction objects.
+Use the `actions` property to get UIAlertAction objects for the alert.
 
 ```Swift
 testableAlert.actions
