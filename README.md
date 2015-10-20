@@ -35,7 +35,7 @@ class ViewController: UIViewController {
 }
 ```
 
-2) In the code that shows the alert initialize an UIAlertController object like you would normally do.
+2) In the code that shows the alert initialize a UIAlertController object like you would normally do.
 
 ```Swift
 let alertController = UIAlertController(
