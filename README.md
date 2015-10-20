@@ -81,7 +81,7 @@ class ViewController: UIViewController {
 
     testableAlert = TestableAlert(alert: alertController)
 
-    testableAlert?.addAction("OK", style: .Destructive, handler: nil) { _ in
+    testableAlert?.addAction("OK", style: .Destructive) { _ in
       // Do something
     }
 
