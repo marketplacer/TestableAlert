@@ -2,7 +2,7 @@
 
 # UIAlertController wrapper for easier unit testing
 
-This is an iOS library written in Swift that makes it easier to test the code that shows UIAlertController alerts. The library allows to check alert visibility and execute its actions from the unit tests.
+This is an iOS library written in Swift that makes it easier to test UIAlertController alerts. The library allows to check alert visibility and execute its actions from the unit tests.
 
 ## Setup
 
