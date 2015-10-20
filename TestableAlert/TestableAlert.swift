@@ -6,8 +6,8 @@ A wrapper around UIAlertController for easier unit testing.
 
 */
 public class TestableAlert {
-  /// Stores the alert controller object
-  let alert: UIAlertController
+  /// Alert object that was passed during initialization.
+  public let alert: UIAlertController
   
   /// Array of alert actions with handlers
   var testableActions = [TestableAlertAction]()
