@@ -1,5 +1,12 @@
 # A UIAlertController wrapper for easier unit testing
 
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)][carthage]
+[![CocoaPods Version](https://img.shields.io/cocoapods/v/TestableAlert.svg?style=flat)][cocoadocs]
+[![License](https://img.shields.io/cocoapods/l/TestableAlert.svg?style=flat)](LICENSE)
+[![Platform](https://img.shields.io/cocoapods/p/TestableAlert.svg?style=flat)][cocoadocs]
+[cocoadocs]: http://cocoadocs.org/docsets/TestableAlert
+[carthage]: https://github.com/Carthage/Carthage
+
 This is an iOS library written in Swift that makes it easier to test UIAlertController alerts. The library allows to check alert visibility and execute its actions from the unit tests.
 
 ## Setup
