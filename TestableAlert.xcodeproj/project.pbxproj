@@ -18,7 +18,8 @@
 		2BAC4C121BD4C2C9004B6CD0 /* TestableAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAC4C111BD4C2C9004B6CD0 /* TestableAlert.swift */; settings = {ASSET_TAGS = (); }; };
 		7EA407411BD5AECE00C426EF /* TestableAlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA407401BD5AECE00C426EF /* TestableAlertTests.swift */; };
 		7EA407431BD5AECE00C426EF /* TestableAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BAC4BE61BD4BF7E004B6CD0 /* TestableAlert.framework */; settings = {ASSET_TAGS = (); }; };
-		7EA4074A1BD5B4C200C426EF /* TestableAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA407491BD5B4C200C426EF /* TestableAlertAction.swift */; settings = {ASSET_TAGS = (); }; };
+		7EA4074C1BD5BCDF00C426EF /* SimulateActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA4074B1BD5BCDF00C426EF /* SimulateActionTests.swift */; settings = {ASSET_TAGS = (); }; };
+		7EA4074E1BD5BE2C00C426EF /* AlertVisibilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA4074D1BD5BE2C00C426EF /* AlertVisibilityTests.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +68,8 @@
 		7EA4073E1BD5AECE00C426EF /* TestableAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestableAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA407401BD5AECE00C426EF /* TestableAlertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestableAlertTests.swift; sourceTree = "<group>"; };
 		7EA407421BD5AECE00C426EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7EA407491BD5B4C200C426EF /* TestableAlertAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestableAlertAction.swift; sourceTree = "<group>"; };
+		7EA4074B1BD5BCDF00C426EF /* SimulateActionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulateActionTests.swift; sourceTree = "<group>"; };
+		7EA4074D1BD5BE2C00C426EF /* AlertVisibilityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertVisibilityTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				2BAC4C111BD4C2C9004B6CD0 /* TestableAlert.swift */,
-				7EA407491BD5B4C200C426EF /* TestableAlertAction.swift */,
 				2BAC4C081BD4C25B004B6CD0 /* Info.plist */,
 				2BAC4C091BD4C25B004B6CD0 /* TestableAlertViewController.h */,
 			);
@@ -144,6 +145,8 @@
 		7EA4073F1BD5AECE00C426EF /* TestableAlertTests */ = {
 			isa = PBXGroup;
 			children = (
+				7EA4074D1BD5BE2C00C426EF /* AlertVisibilityTests.swift */,
+				7EA4074B1BD5BCDF00C426EF /* SimulateActionTests.swift */,
 				7EA407401BD5AECE00C426EF /* TestableAlertTests.swift */,
 				7EA407421BD5AECE00C426EF /* Info.plist */,
 			);
@@ -292,7 +295,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EA4074A1BD5B4C200C426EF /* TestableAlertAction.swift in Sources */,
 				2BAC4C121BD4C2C9004B6CD0 /* TestableAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +313,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EA407411BD5AECE00C426EF /* TestableAlertTests.swift in Sources */,
+				7EA4074E1BD5BE2C00C426EF /* AlertVisibilityTests.swift in Sources */,
+				7EA4074C1BD5BCDF00C426EF /* SimulateActionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

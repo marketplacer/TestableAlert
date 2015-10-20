@@ -18,8 +18,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vz0-KC-aZN">
-                                <rect key="frame" x="264" y="70" width="73" height="30"/>
+                                <rect key="frame" x="244" y="279.5" width="113" height="41"/>
                                 <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Show alert"/>
                                 <connections>
                                     <action selector="didTapShowAlertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Snh-DE-iSt"/>
@@ -29,7 +30,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Vz0-KC-aZN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="QSt-LQ-g8x"/>
+                            <constraint firstItem="Vz0-KC-aZN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="50b-ne-7J4"/>
                             <constraint firstItem="Vz0-KC-aZN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gBV-xL-Q7Z"/>
                         </constraints>
                     </view>
