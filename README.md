@@ -97,7 +97,7 @@ Here is how you can verify the alert and execute its actions from your view cont
 XCTAssert(viewController.testableAlert.visible)
 ```
 
-2) Execute an action by its title. This will call the action handler and dismiss the alert. This
+2) Execute an action by its title. This will call the action handler and dismiss the alert.
 
 ```Swift
 viewController.testableAlert.simulateAction("OK")
