@@ -2,9 +2,7 @@
 
 # UIAlertController wrapper for easier unit testing
 
-UIAlertController is used in iOS to present modal alerts and action sheets. This library makes it easier to test your code that uses UIAlertController.
-
-This library will allow you to do check if alert view is visible in unit tests and execute its actions. Executing an alert action will call its handler.
+This is an iOS library written in Swift that makes it easier to test the code that shows UIAlertController alerts. The library allows to check alert visibility and execute its actions from the unit tests.
 
 ## Setup
 
