@@ -9,15 +9,29 @@
 
 This is an iOS library written in Swift that makes it easier to test UIAlertController alerts. The library allows to check alert visibility and execute its actions from the unit tests.
 
-Example of a unit test:
+Example of a unit test for a remove button that shows an alert with two actions: "Remove" and "Close".
 
 ```Swift
-XCTAssert(viewController.testableAlert!.visible)
-XCTAssertEqual("Do you want to refund this order?", viewController.testableAlert!.alert.title)
-XCTAssertEqual(2, viewController.testableAlert!.actions.count)
-XCTAssertEqual("Yes, refund this order", viewController.testableAlert!.actions[0].title)
-XCTAssertEqual("Close", viewController.testableAlert!.actions[1].title)
-testableAlert.simulateAction("Yes, refund this order")
+func testTapRemove() {
+  viewController.didTapRemoveButton(UIButton())
+  
+  // Verify alert is presented
+  XCTAssert(viewController.testableAlert!.visible)
+ 
+  // Verify alert title
+  XCTAssertEqual("Do you want to remove this item?", viewController.testableAlert!.alert.title)
+  
+  // Verify the buttons
+  XCTAssertEqual(2, viewController.testableAlert!.actions.count)
+  XCTAssertEqual("Yes, remove this item", viewController.testableAlert!.actions[0].title)
+  XCTAssertEqual("Close", viewController.testableAlert!.actions[1].title)
+  
+  // Press "Remove" button
+  viewController.testableAlert.simulateAction("Yes, remove this item")
+  
+  // Verify the item was removed
+  XCTAssert(viewController.itemIsRemoved)
+}
 ```
 
 ## Setup
