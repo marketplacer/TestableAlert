@@ -19,12 +19,12 @@ func testTapRemove() {
   XCTAssert(viewController.testableAlert!.visible)
  
   // Verify alert title
-  XCTAssertEqual("Do you want to remove this item?", viewController.testableAlert!.alert.title)
+  XCTAssertEqual(viewController.testableAlert!.alert.title, "Do you want to remove this item?")
   
   // Verify the buttons
-  XCTAssertEqual(2, viewController.testableAlert!.actions.count)
-  XCTAssertEqual("Yes, remove this item", viewController.testableAlert!.actions[0].title)
-  XCTAssertEqual("Close", viewController.testableAlert!.actions[1].title)
+  XCTAssertEqual(viewController.testableAlert!.actions.count, 2)
+  XCTAssertEqual(viewController.testableAlert!.actions[0].title, "Yes, remove this item")
+  XCTAssertEqual(viewController.testableAlert!.actions[1].title, "Close")
   
   // Press "Remove" button
   viewController.testableAlert.simulateAction("Yes, remove this item")
