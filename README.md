@@ -9,6 +9,17 @@
 
 This is an iOS library written in Swift that makes it easier to test UIAlertController alerts. The library allows to check alert visibility and execute its actions from the unit tests.
 
+Example of a unit test:
+
+```Swift
+XCTAssert(viewController.testableAlert!.visible)
+XCTAssertEqual("Do you want to refund this order?", viewController.testableAlert!.alert.title)
+XCTAssertEqual(2, viewController.testableAlert!.actions.count)
+XCTAssertEqual("Yes, refund this order", viewController.testableAlert!.actions[0].title)
+XCTAssertEqual("Close", viewController.testableAlert!.actions[1].title)
+testableAlert.simulateAction("Yes, refund this order")
+```
+
 ## Setup
 
 There are three ways you can add TestableAlert to your project.
