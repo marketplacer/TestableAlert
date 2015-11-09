@@ -1,4 +1,4 @@
-# A UIAlertController wrapper for easier unit testing
+# A UIAlertController wrapper for easier unit testing in iOS / Swift
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)][carthage]
 [![CocoaPods Version](https://img.shields.io/cocoapods/v/TestableAlert.svg?style=flat)][cocoadocs]
@@ -8,6 +8,31 @@
 [carthage]: https://github.com/Carthage/Carthage
 
 This is an iOS library written in Swift that makes it easier to test UIAlertController alerts. The library allows to check alert visibility and execute its actions from the unit tests.
+
+Example of a unit test for a remove button that shows an alert with two actions: "Remove" and "Close".
+
+```Swift
+func testTapRemove() {
+  viewController.didTapRemoveButton(UIButton())
+  
+  // Verify alert is presented
+  XCTAssert(viewController.testableAlert!.visible)
+ 
+  // Verify alert title
+  XCTAssertEqual(viewController.testableAlert!.alert.title, "Do you want to remove this item?")
+  
+  // Verify the buttons
+  XCTAssertEqual(viewController.testableAlert!.actions.count, 2)
+  XCTAssertEqual(viewController.testableAlert!.actions[0].title, "Yes, remove this item")
+  XCTAssertEqual(viewController.testableAlert!.actions[1].title, "Close")
+  
+  // Press "Remove" button
+  viewController.testableAlert.simulateAction("Yes, remove this item")
+  
+  // Verify the item was removed
+  XCTAssert(viewController.itemIsRemoved)
+}
+```
 
 ## Setup
 
