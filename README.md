@@ -14,21 +14,21 @@ Example of a unit test for a remove button that shows an alert with two actions:
 ```Swift
 func testTapRemove() {
   viewController.didTapRemoveButton(UIButton())
-  
+
   // Verify alert is presented
   XCTAssert(viewController.testableAlert!.visible)
- 
+
   // Verify alert title
   XCTAssertEqual(viewController.testableAlert!.alert.title, "Do you want to remove this item?")
-  
+
   // Verify the buttons
   XCTAssertEqual(viewController.testableAlert!.actions.count, 2)
   XCTAssertEqual(viewController.testableAlert!.actions[0].title, "Yes, remove this item")
   XCTAssertEqual(viewController.testableAlert!.actions[1].title, "Close")
-  
+
   // Press "Remove" button
   viewController.testableAlert.simulateAction("Yes, remove this item")
-  
+
   // Verify the item was removed
   XCTAssert(viewController.itemIsRemoved)
 }
@@ -40,11 +40,11 @@ There are three ways you can add TestableAlert to your project.
 
 **Add source (iOS 7+)**
 
-Simply add [TestableAlert.swift](https://github.com/exchangegroup/TestableAlert/blob/master/TestableAlert/TestableAlert.swift) file into your Xcode project.
+Simply add [TestableAlert.swift](https://github.com/marketplacer/TestableAlert/blob/master/TestableAlert/TestableAlert.swift) file into your Xcode project.
 
 **Setup with Carthage (iOS 8+)**
 
-Add `github "exchangegroup/TestableAlert" ~> 1.0` to your Cartfile and run `carthage update`.
+Add `github "marketplacer/TestableAlert" ~> 1.0` to your Cartfile and run `carthage update`.
 
 **Setup with CocoaPods (iOS 8+)**
 
